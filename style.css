@@ -1,9 +1,18 @@
 .container{
-    background: red;
+    background: rgb(46, 43, 43);
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 240px;
+    height: 370px;
+}
+
+.screen{
+    display: flex;
+    background: rgb(72, 94, 72);
+    height: 50px;
+   
+
 }
 
 .buttonsContainer{
@@ -33,6 +42,8 @@
 
 .buttons{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
 }
