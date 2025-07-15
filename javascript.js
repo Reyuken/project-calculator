@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const clear = document.getElementById("clear");
-    clear.addEventListener("click", () => console.log("clear"));
+    clear.addEventListener("click", clearFunction);
 
     const deleteButton = document.getElementById("deleteButton");
     deleteButton.addEventListener("click", () => console.log("deleteButton"));
@@ -136,6 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function clearFunction(){
+        counter = 0;
+        const equation = document.querySelector("#equation");
+        equation.innerText = "";
+    }
 
 
 
