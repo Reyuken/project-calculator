@@ -98,22 +98,18 @@ document.addEventListener("DOMContentLoaded", () => {
     clear.addEventListener("click", clearFunction);
 
     const deleteButton = document.getElementById("deleteButton");
-    deleteButton.addEventListener("click", () => console.log("deleteButton"));
+    deleteButton.addEventListener("click", deleteFunction);
 
         //displays value of button clicked to screen
     let counter = 0;
     function display(buttonInputSign) {
         const equation = document.querySelector("#equation");
         const input = document.createElement("div");
-        
-        if (counter < 17) {
-            equation.append(input);
+        equation.append(input);
             input.setAttribute("class", "inputID");
             input.innerText = buttonInputSign;
             counter++;
-            return console.log(counter);
-        }
-        else {
+        if (counter >= 17) {
             document.getElementById("seven").disabled = true;
             document.getElementById("eight").disabled = true;
             document.getElementById("nine").disabled = true;
@@ -132,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("plus").disabled = true;
 
         }
+        // return console.log(counter);
     }
     //clears the screen 
     function clearFunction(){
@@ -141,21 +138,21 @@ document.addEventListener("DOMContentLoaded", () => {
         const answerOutput = document.querySelector("#answer");
         answerOutput.innerText = "";
         document.getElementById("seven").disabled = false;
-            document.getElementById("eight").disabled = false;
-            document.getElementById("nine").disabled = false;
-            document.getElementById("divide").disabled = false;
-            document.getElementById("four").disabled = false;
-            document.getElementById("five").disabled = false;
-            document.getElementById("six").disabled = false;
-            document.getElementById("multiply").disabled = false;
-            document.getElementById("one").disabled = false;
-            document.getElementById("two").disabled = false;
-            document.getElementById("three").disabled = false;
-            document.getElementById("minus").disabled = false;
-            document.getElementById("period").disabled = false;
-            document.getElementById("zero").disabled = false;
-            document.getElementById("equals").disabled = false;
-            document.getElementById("plus").disabled = false;
+        document.getElementById("eight").disabled = false;
+        document.getElementById("nine").disabled = false;
+        document.getElementById("divide").disabled = false;
+        document.getElementById("four").disabled = false;
+        document.getElementById("five").disabled = false;
+        document.getElementById("six").disabled = false;
+        document.getElementById("multiply").disabled = false;
+        document.getElementById("one").disabled = false;
+        document.getElementById("two").disabled = false;
+        document.getElementById("three").disabled = false;
+        document.getElementById("minus").disabled = false;
+        document.getElementById("period").disabled = false;
+        document.getElementById("zero").disabled = false;
+        document.getElementById("equals").disabled = false;
+        document.getElementById("plus").disabled = false;
     }
     //evaluates the equation on screen
     function equalsFunction(){
@@ -167,7 +164,32 @@ document.addEventListener("DOMContentLoaded", () => {
         answerOutput.innerText = eval(combineInputID);
         return console.log(answer);
     }
+    //delete latest variable
+    function deleteFunction(){
+        const equation = document.getElementById("equation");
+        const last = equation.lastElementChild;
+    if (last){
+        equation.removeChild(last);
+        counter = Math.max(0, counter-1);
+        document.getElementById("seven").disabled = false;
+        document.getElementById("eight").disabled = false;
+        document.getElementById("nine").disabled = false;
+        document.getElementById("divide").disabled = false;
+        document.getElementById("four").disabled = false;
+        document.getElementById("five").disabled = false;
+        document.getElementById("six").disabled = false;
+        document.getElementById("multiply").disabled = false;
+        document.getElementById("one").disabled = false;
+        document.getElementById("two").disabled = false;
+        document.getElementById("three").disabled = false;
+        document.getElementById("minus").disabled = false;
+        document.getElementById("period").disabled = false;
+        document.getElementById("zero").disabled = false;
+        document.getElementById("equals").disabled = false;
+        document.getElementById("plus").disabled = false;
+    }
 
+    }
 
 
 })
