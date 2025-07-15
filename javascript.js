@@ -140,7 +140,24 @@ document.addEventListener("DOMContentLoaded", () => {
         counter = 0;
         const equation = document.querySelector("#equation");
         equation.innerText = "";
+        document.getElementById("seven").disabled = false;
+            document.getElementById("eight").disabled = false;
+            document.getElementById("nine").disabled = false;
+            document.getElementById("divide").disabled = false;
+            document.getElementById("four").disabled = false;
+            document.getElementById("five").disabled = false;
+            document.getElementById("six").disabled = false;
+            document.getElementById("multiply").disabled = false;
+            document.getElementById("one").disabled = false;
+            document.getElementById("two").disabled = false;
+            document.getElementById("three").disabled = false;
+            document.getElementById("minus").disabled = false;
+            document.getElementById("period").disabled = false;
+            document.getElementById("zero").disabled = false;
+            document.getElementById("equals").disabled = false;
+            document.getElementById("plus").disabled = false;
     }
+
 
 
 
