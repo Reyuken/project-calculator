@@ -14,10 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const equals = document.getElementById("equals");
-    equals.addEventListener("click", () => {
-        const buttonInputSign = "=";
-        display(buttonInputSign);
-    });
+    equals.addEventListener("click",equalsFunction);
 
     const plus = document.getElementById("plus");
     plus.addEventListener("click", () => {
@@ -110,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (counter < 17) {
             equation.append(input);
-            input.setAttribute("id", "inputID");
+            input.setAttribute("class", "inputID");
             input.innerText = buttonInputSign;
             counter++;
             return console.log(counter);
@@ -158,6 +155,15 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("plus").disabled = false;
     }
 
+    function equalsFunction(){
+        const answerOutput = document.querySelector("#answer");
+        answerOutput.innerText = "";
+        const input = document.querySelectorAll(".inputID");
+        const combineInputID = [...input].map(input=> input.textContent.trim()).join('');
+        let answer = "";
+        answerOutput.innerText = eval(combineInputID);
+        return console.log(answer);
+    }
 
 
 
