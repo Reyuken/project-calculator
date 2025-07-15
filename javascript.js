@@ -1,52 +1,101 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // const period = document.getElementById("period");
-    // period.addEventListener("click",()=>console.log("."));
+
+    const period = document.getElementById("period");
+    period.addEventListener("click", ()=>{
+    const buttonInputSign = ".";
+    display(buttonInputSign); 
+    });
 
     const zero = document.getElementById("zero");
-    zero.addEventListener("click", () => console.log("0"));
+    zero.addEventListener("click", () => {
+    const buttonInputSign = "0";
+    display(buttonInputSign); 
+    });
 
     const equals = document.getElementById("equals");
-    equals.addEventListener("click", () => console.log("="));
+    equals.addEventListener("click", () => {
+    const buttonInputSign = "=";
+    display(buttonInputSign); 
+    });
 
     const plus = document.getElementById("plus");
-    plus.addEventListener("click", () => console.log("+"));
+    plus.addEventListener("click", () => {
+    const buttonInputSign = "+";
+    display(buttonInputSign); 
+    });
 
     const one = document.getElementById("one");
-    one.addEventListener("click", () => console.log("1"));
+    one.addEventListener("click", () => {
+    const buttonInputSign = "1";
+    display(buttonInputSign); 
+    });
 
     const two = document.getElementById("two");
-    two.addEventListener("click", () => console.log("2"));
+    two.addEventListener("click", () => {
+    const buttonInputSign = "2";
+    display(buttonInputSign); 
+    });
 
     const three = document.getElementById("three");
-    three.addEventListener("click", () => console.log("3"));
+    three.addEventListener("click", () => {
+    const buttonInputSign = "3";
+    display(buttonInputSign); 
+    });
 
     const minus = document.getElementById("minus");
-    minus.addEventListener("click", () => console.log("-"));
+    minus.addEventListener("click", () => {
+    const buttonInputSign = "-";
+    display(buttonInputSign); 
+    });
 
     const four = document.getElementById("four");
-    four.addEventListener("click", () => console.log("4"));
+    four.addEventListener("click", () => {
+    const buttonInputSign = "4";
+    display(buttonInputSign); 
+    });
 
     const five = document.getElementById("five");
-    five.addEventListener("click", () => console.log("5"));
+    five.addEventListener("click", () => {
+    const buttonInputSign = "5";
+    display(buttonInputSign); 
+    });
 
     const six = document.getElementById("six");
-    six.addEventListener("click", () => console.log("6"));
+    six.addEventListener("click", () => {
+    const buttonInputSign = "6";
+    display(buttonInputSign); 
+    });
 
     const multiply = document.getElementById("multiply");
-    multiply.addEventListener("click", () => console.log("*"));
+    multiply.addEventListener("click", () => {
+    const buttonInputSign = "*";
+    display(buttonInputSign); 
+    });
 
     const seven = document.getElementById("seven");
-    seven.addEventListener("click", () => console.log("7"));
+    seven.addEventListener("click", () => {
+    const buttonInputSign = "7";
+    display(buttonInputSign); 
+    });
 
     const eight = document.getElementById("eight");
-    eight.addEventListener("click", () => console.log("8"));
+    eight.addEventListener("click", () => {
+    const buttonInputSign = "8";
+    display(buttonInputSign); 
+    });
 
     const nine = document.getElementById("nine");
-    nine.addEventListener("click", () => console.log("9"));
+    nine.addEventListener("click", () => {
+    const buttonInputSign = "9";
+    display(buttonInputSign); 
+    });
 
     const divide = document.getElementById("divide");
-    divide.addEventListener("click", () => console.log("/"));
+    divide.addEventListener("click", () => {
+    const buttonInputSign = "/";
+    display(buttonInputSign); 
+    });
 
     const clear = document.getElementById("clear");
     clear.addEventListener("click", () => console.log("clear"));
@@ -64,11 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
 }
 
-    const period = document.getElementById("period");
-    period.addEventListener("click", ()=>{
-    const buttonInputSign = ".";
-    display(buttonInputSign); 
-    });
 
 
 })
