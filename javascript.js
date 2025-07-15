@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
+    //activates buttons
     const period = document.getElementById("period");
     period.addEventListener("click", () => {
         const buttonInputSign = ".";
@@ -100,6 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const deleteButton = document.getElementById("deleteButton");
     deleteButton.addEventListener("click", () => console.log("deleteButton"));
 
+        //displays value of button clicked to screen
     let counter = 0;
     function display(buttonInputSign) {
         const equation = document.querySelector("#equation");
@@ -132,11 +133,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
     }
-
+    //clears the screen 
     function clearFunction(){
         counter = 0;
         const equation = document.querySelector("#equation");
         equation.innerText = "";
+        const answerOutput = document.querySelector("#answer");
+        answerOutput.innerText = "";
         document.getElementById("seven").disabled = false;
             document.getElementById("eight").disabled = false;
             document.getElementById("nine").disabled = false;
@@ -154,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("equals").disabled = false;
             document.getElementById("plus").disabled = false;
     }
-
+    //evaluates the equation on screen
     function equalsFunction(){
         const answerOutput = document.querySelector("#answer");
         answerOutput.innerText = "";
