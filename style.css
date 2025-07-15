@@ -15,9 +15,8 @@ body{
 
 .screen{
     display: flex;
-    flex-flow: ;
     background: rgb(72, 94, 72);
-    height: 50px;
+    height: 25px;
     align-items: center;
     justify-content: end;
     font-size: x-large;

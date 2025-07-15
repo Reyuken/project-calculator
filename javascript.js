@@ -105,13 +105,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     function display(buttonInputSign) {
-        const screen = document.querySelector(".screen");
+        const equation = document.querySelector("#equation");
         const input = document.createElement("div");
-        screen.append(input);
+        // let counter = 0;
+        // if (counter<17){
+        equation.append(input);
         input.setAttribute("id", "inputID");
         input.innerText = buttonInputSign;
+        // counter++;
+        }
+        // else {
+        // document.get
+        
+        // }
     
-}
+
 
 
 
